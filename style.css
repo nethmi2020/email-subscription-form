@@ -1,0 +1,113 @@
+body{
+    height: 100;
+    background: linear-gradient(230deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%);
+}
+
+.show-btn {
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(224,195,252);
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 13px 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.wrapper{
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+#toggle{
+    display: none;
+}
+#toggle:checked ~.wrapper{
+    opacity: 0;
+    pointer-events: none;
+    top: 40%;
+    transition: all 0.3s ease;
+}
+.cancel-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: rgb(142,197,252);
+}
+.icon{
+    height: 110px;
+    width: 110px;
+    background: linear-gradient(230deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%);
+    line-height: 110px;
+    border-radius: 50%;
+    font-size: 55px;
+    color: #fff;
+}
+.content{
+    margin: 20px 0;
+}
+
+.content header{
+    font-size: 30px;
+    font-weight: 600px;
+}
+
+.content p{
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+}
+form{
+    width: 98%;
+
+}
+
+form .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+form .field input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* padding: 0 15px; */
+    outline: none;
+    font-size: 17px;
+}
+form .field input:focus{
+    border-color: aqua;
+}
+form .btn{
+    height: 47px;
+}
+
+form .btn input{
+    background: linear-gradient(230deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%);
+    color: #fff;
+    font-size: 19px;
+    padding: 0px;
+    cursor: pointer;
+}
+.text{
+    margin-top: 5px;
+
+}
